@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Vivah</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+ <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 100px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #d9475c;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #FCCF8E;
+  color: white;
+  transform: rotateY(180deg);
+}
+  .affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+    padding-top: 70px;
+  }
+  body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+  <div class="flip-box" style="margin-top: 50px">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>VIVAH</h2>
+    </div>
+    <div class="flip-box-back">
+      <h2>Expert In Making Couples</h2>
+    </div>
+  </div>
+</div>
+ <nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container-fluid">
+ <div class="navbar-header">
+ <a class="navbar-brand" style="font-style: Brush Script MT" href="file:///C:/Users/Asus/Desktop/Bootstrap/bootstrap-4.0.0-alpha.6-dist/Matrimonial.html">VIVAH</a>
+ </div>
+ <ul class="nav navbar-nav navbar-right">
+ <li ><a href="file:///C:/Users/Asus/Desktop/Bootstrap/bootstrap-4.0.0-alpha.6-dist/Matrimonial.html">Home</a></li>
+ <li><a href="file:///C:/Users/Asus/Desktop/Bootstrap/bootstrap-4.0.0-alpha.6-dist/success.html">Sucess Stories</a></li>
+ <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Searching For<span
+class="caret"></span></a>
+ <ul class="dropdown-menu">
+ <li><a href="file:///C:/Users/Asus/Desktop/Bootstrap/bootstrap-4.0.0-alpha.6-dist/groom.html">Groom</a></li>
+ <li><a href="file:///C:/Users/Asus/Desktop/Bootstrap/bootstrap-4.0.0-alpha.6-dist/bride.html">Bride</a></li>
+ </ul>
+ </li>
+ <li><a href="file:///C:/Users/Asus/Desktop/Bootstrap/bootstrap-4.0.0-alpha.6-dist/about.html">About Us</a></li>
+ <li><a href="file:///C:/Users/Asus/Desktop/Bootstrap/bootstrap-4.0.0-alpha.6-dist/membership.html">Membership</a></li>
+ <li><a href="file:///C:/Users/Asus/Desktop/Bootstrap/bootstrap-4.0.0-alpha.6-dist/blog.html">Vivah Blog</a></li>
+ <li><a href="file:///C:/Users/Asus/Desktop/Bootstrap/bootstrap-4.0.0-alpha.6-dist/contact.html">Contact Us</a></li>
+ <li><a href="file:///C:/Users/Asus/Desktop/Bootstrap/bootstrap-4.0.0-alpha.6-dist/help.html">Help</a></li>
+ <li><a href="file:///C:/Users/Asus/Desktop/Bootstrap/bootstrap-4.0.0-alpha.6-dist/signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+ </ul>
+</nav>
+<div class="w3-content w3-section" style="max-width:100%" >
+  <img class="mySlides" src="m1.jpeg" style="width:100%">
+  <img class="mySlides" src="m2.jpg" style="width:100%">
+  <img class="mySlides" src="m3.jpg" style="width:100%">
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block"; 
+  setTimeout(carousel, 2000);
+}
+</script>
+<div class="container">
+  <h2>Bringing People Together</h2>
+  <p>MORE THAN 20 YEARS OF</p>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse1">Services</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">100% Manually Screened Profiles</div>
+        <div class="panel-footer">Verification by Personal Visit</div>
+        <div class="panel-footer">Lakhs of Success Stories</div>
+      </div>
+    </div>
+  </div>
+<div class="container">
+ <h2 style="font-family: verdana " > Browse Matrimonial Profile <span class="badge badge-pill badge-info">NEW</span></h2>
+ <p>Browse According To Your Values</p>
+ <div class="row">
+ <div class="col-md-4">
+ <div class="thumbnail">
+ <h3 style="text-align: center; color: maroon;">MOTHER TOUNGE</h3>
+ <p style="text-align: center;">Hindi | English | Urdu | Punjabi | Kannad | Gujrati</p>
+ <div class="caption">
+ <button type="submit" class="btn btn-primary">Read More</button>
+ </div>
+ </a>
+ </div>
+ </div>
+ <div class="col-md-4">
+ <div class="thumbnail">
+ <h3 style="color: maroon; text-align: center;">RELIGION</h3>
+ <p style="text-align: center;">Hindu | Muslim | Christian | Sikh | Budhist | Jain</p>
+ <div class="caption">
+ <button type="submit" class="btn btn-primary">Read More</button>
+ </div>
+ </a>
+ </div>
+ </div>
+ <div class="col-md-4">
+ <div class="thumbnail">
+ <h3 style="color: maroon; text-align: center;">CASTE</h3>
+ <p style="text-align: center;">Rajput | Brahmin | Jat | Muslim | Punjabi | Maratha</p>
+ <div class="caption">
+ <button type="submit" class="btn btn-primary">Read More</button>
+ </div>
+ </a>
+ </div>
+ </div>
+ <div class="col-md-4">
+ <div class="thumbnail">
+ <h3 style="color: maroon; text-align: center;">STATES</h3>
+ <p style="text-align: center;">California | New York | Texas | New Jersey | Virginia</p>
+ <div class="caption">
+ <button type="submit" class="btn btn-primary">Read More</button>
+ </div>
+ </a>
+ </div>
+ </div>
+ <div class="col-md-4">
+ <div class="thumbnail">
+ <h3 style="color: maroon; text-align: center;">OCCUPATION</h3>
+ <p style="text-align: center;">Engineer | Doctor | Bussinesman | Teacher | Banking </p>
+ <div class="caption">
+ <button type="submit" class="btn btn-primary">Read More</button>
+ </div>
+ </a>
+ </div>
+ </div>
+ <div class="col-md-4">
+ <div class="thumbnail">
+ <h3 style="color: maroon; text-align: center;">COUNTRY</h3>
+ <p style="text-align: center;">India | United States | Pakistan | Canada </p>
+ <div class="caption">
+ <button type="submit" class="btn btn-primary">Read More</button>
+ </div>
+ </a>
+ </div>
+ </div>
+ </div>
+ <div class="alert alert-warning alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>COVID-19</strong> Only 100 people are allowed in the function due to covid.
+  </div>
+ <div class="container">                
+  <ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Private</a></li>
+    <li><a href="#">Pictures</a></li>       
+  </ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
